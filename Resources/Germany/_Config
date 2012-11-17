@@ -1,0 +1,35 @@
+| SpriteLib Configure definitions
+
+Title = SpriteLib
+Width = 750
+Height = 100
+CheckVersion = 0.80
+File = <Choices$Write>.SpriteLib.Choices
+Separator = :
+Remark = #
+Boolean = 2
+
+[Main]
+
+Icon = window
+Text = Einstellungen
+Width = 220
+
+{
+ Width= 280
+ Text = $&%@\^:.,#*|"
+ Type = Comment
+ Legend =
+ Options = -border 2
+}
+
+{
+ Name = SUBSTITUTION
+ Text = Ersatz Zeichen
+ Type = String
+ Width= 280
+ Size = 13
+ Default = _____________
+ Comment = (1-13)
+ Help = Ersetzen $ & % @ \ ^ : . , # * | "
+}

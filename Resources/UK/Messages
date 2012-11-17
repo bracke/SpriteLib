@@ -1,0 +1,58 @@
+# StrongEd$Mode=Message
+_TaskName:SpriteLib
+VERS:2.14 (2005-02-19)
+# Obey file error messages
+DESCRIPTION:Makes it easier to compare sprites.
+CONFIX:ConfiX cannot be found. Please make sure the filer has seen it before running SpriteLib.
+RO:SpriteLib needs RISC OS 3 or later.
+TASKEXIST:You can only have one copy of SpriteLib running at once.
+NESTED:SpriteLib requires the Nested Window Manager. This can be obtained by downloading the Universal Boot sequence from http://acorn.riscos.com/
+MODCLIB:You need the SharedCLibrary to run SpriteLib. 
+MODTB:You need 'Toolbox' module (v1.71) to run SpriteLib.
+MODCM:You need the 'ColourMenu' module (v0.24) to run SpriteLib.
+MODCD:You need the 'ColourDBox' module (v0.23) to run SpriteLib.
+MODDCS:You need the 'DCS' module (v1.16) to run SpriteLib.
+MODFI:You need the 'FileInfo' module (v0.22) to run SpriteLib.
+MODFB:You need the 'FontDBox' module (v0.22) to run SpriteLib.
+MODFM:You need the 'FontMenu' module (v0.27) to run SpriteLib.
+MODIB:You need the 'IconBar' module (v1.22) to run SpriteLib.
+MODMU:You need the 'Menu' module (v0.40) to run SpriteLib.
+MODPT:You need the 'PrintDBox' module (v0.20) to run SpriteLib.
+MODPI:You need the 'ProgInfo' module (v0.20) to run SpriteLib.
+MODSAVE:You need the 'SaveAs' module (v0.22) to run SpriteLib.
+MODSC:You need the 'Scale' module (v0.19) to run SpriteLib.
+MODWD:You need the 'Window' module (v1.79) to run SpriteLib.
+MODTA:You need the 'ToolAction' module (v0.23) to run SpriteLib.
+MODTG:You need the 'TextGadgets' module (v0.49) to run SpriteLib.
+MODURI:You need the 'URI' module to run SpriteLib.
+# Error messages
+REPEATEXIST:File no longer exists.%0
+CHOICES:Error reading choices. %0
+UNTRAPPED:Untrapped exception. %0
+ADDSPRITE:Error while adding sprite. %0
+PROCESS:Error while processing file. %0
+BUGZQUERY:Error answering a query from Bugz. %0
+BUGZCREATE:Error creating Bugz report. %0
+NOBUGZ:Please locate the Bugz application. %0
+TOOLBOXERROR:Error processing Toolbox Error. %0
+HOMEPAGE:Error viewing Homepage. %0
+SENDEMAIL:Error sending E-Mail. %0
+MQUIT:Error receiving 'Quit' Message. %0
+TQUIT:Error receiving Toolbox 'Quit' Message. %0
+VIEWMANUAL:Error opening Manual. %0
+VIEWIHELP:Error running starting interactive help. %0
+CONFIGURE:Error running !Configure - %0
+VIEWCHAPTER:Error opening chapter in manual. %0
+MSGCLOSED:Messages file is closed. %0
+HANDLE_FONTCHANGED:Error handling FontChanged Message. %0
+OPENWINDOW:Error trying to open window on iconbar SELECT click. %0
+POSSAVE:Error trying to save the windowposition. %0
+#
+UNTITLED:Untitled
+PAUSE:Pause
+CONTINUE:Continue
+READY:Ready for the next file
+# Choices - dummy tokens to satisfy 'CheckMsgs'
+LASTSPRITE:
+TARGETPATH:
+SUBSTITUTION:

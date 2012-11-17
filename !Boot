@@ -1,0 +1,18 @@
+Run <Obey$Dir>.Resources.ResFind SpriteLib
+|
+Set SpriteLib$Help SpriteLibRes:SpriteLib
+Set SpriteLib$Version "2.14"
+Set SpriteLib$Web "http://www.arcsite.de/hp/bracke/"
+Set SpriteLib$Title "SpriteLib"
+Set SpriteLib$Publisher "Bent Bracke"
+Set SpriteLib$Description "Makes it easier to compare sprites."
+Run <SpriteLib$Dir>.Resources.ReadToken SpriteLibRes:Messages DESCRIPTION
+do Set SpriteLib$Description <ReadToken$Value>
+|
+Set SpriteLibSprites 2
+RMEnsure UtilityModule 5.00 Set SpriteLibSprites 1
+RMEnsure UtilityModule 4.00 Set SpriteLibSprites 0
+If <SpriteLibSprites> = 2 Then Iconsprites <SpriteLib$Dir>.!Sprites5
+If <SpriteLibSprites> = 1 Then Iconsprites <SpriteLib$Dir>.!Sprites4
+If <SpriteLibSprites> = 0 Then Iconsprites <SpriteLib$Dir>.!Sprites
+UnSet SpriteLibSprites

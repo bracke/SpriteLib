@@ -1,0 +1,26 @@
+Run <Obey$Dir>.!Boot
+Run <SpriteLib$Dir>.Resources.IsTask SpriteLib
+If <SpriteLib$Task> <> 0 Then Run <SpriteLib$Dir>.Resources.ReadToken SpriteLibRes:Messages TASKEXIST
+If <SpriteLib$Task> <> 0 Then ERROR 0 <ReadToken$Value>
+
+|
+RMEnsure UtilityModule 3.00 Run <SpriteLib$Dir>.Resources.ReadToken SpriteLibRes:Messages RO
+RMEnsure UtilityModule 3.00 ERROR 0 <ReadToken$Value>
+| 
+RMEnsure WindowManager 3.80 Run <SpriteLib$Dir>.Resources.ReadToken SpriteLibRes:Messages NESTED
+RMEnsure WindowManager 3.80 ERROR 0 <ReadToken$Value>
+|
+RMEnsure SharedCLibrary 0.01 System:modules.clib
+RMEnsure SharedCLibrary 0.01 Run <SpriteLib$Dir>.Resources.ReadToken SpriteLibRes:Messages MODCLIB
+RMEnsure SharedCLibrary 0.01 ERROR 0 <ReadToken$Value>
+|
+Run <SpriteLib$Dir>.!Toolbox
+|
+UnSet SpriteLib$Start_URI_Handler
+RMEnsure AcornURI 0.12 Set SpriteLib$Start_URI_Handler 1
+<SpriteLib$Dir>.Resources.IgnoreErr RMEnsure AcornURI 0.12 RMLoad System:Modules.Network.URI
+RMEnsure AcornURI 0.12 UnSet SpriteLib$Start_URI_Handler
+RMEnsure AcornURI 0.12 Run <SpriteLib$Dir>.Resources.ReadToken SpriteLibRes:Messages MODURI
+RMEnsure AcornURI 0.12 ERROR 0 <ReadToken$Value>
+|
+<SpriteLib$Dir>.Resources.MinSlot <SpriteLib$Dir>.!RunImage %*0
